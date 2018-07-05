@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>GreenSock: Basic Tween</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+<div class="perspective">
+
+	<!-- HTML box -->
+	<div id="boxHTML" class="box">
+		<p>DIV</p>
+		<span id="htmlDOT"></span>
+	</div>
+
+	<!-- SVG box -->
+	<svg id="boxSVG" class="box" version="1.1"
+	baseProfile="full"
+	width="200" height="200"
+	xmlns="http://www.w3.org/2000/svg">
+
+	<rect width="100%" height="100%" fill="#2b4d66" />
+	<circle class="circ" cx="100" cy="100" r="20" fill="#b1dec7" />
+	<text x="100" y="170" font-size="40" text-anchor="middle" fill="white">SVG</text>
+	<circle class="circStroke" cx="100" cy="100" r="95" fill="#2b4d66" />
+	</svg>
+
+	<div class="buttons">
+		<button id="btnNext">Next</button>
+		<button id="btnPrev">Previous</button>
+	</div>
+
+</div>
+
+<!-- jQuery -->
+<script
+src="https://code.jquery.com/jquery-3.3.1.js"
+integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+crossorigin="anonymous"></script>
+
+<!--- The following scripts are necessary to do TweenLite tweens on CSS properties -->
+<script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"></script>
+<script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+<script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/plugins/CSSPlugin.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/easing/EasePack.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineLite.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+
+
+
+
+
+<!-- Custom Animations -->
+<script type="text/javascript" src="js/animations.js"></script>
+
+</body>
+</html>
